@@ -1,0 +1,13 @@
+{
+  "installOptions": {
+    "installTypes": true
+  },
+  "scripts": {
+    "mount:public": "mount ./public --to /",
+    "mount:web_modules": "mount web_modules --to /web_modules",
+    "mount:src": "mount ./src --to /dist",
+    "build:ts,tsx": "babel --filename $FILE",
+    "run:tsc": "tsc --noEmit",
+    "run:tsc::watch": "$1 --watch"
+  }
+}
